@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   delete 'pictures/:id' => 'pictures#destroy'
 
+  post 'users' => 'users#create'
+  get 'users/new' => 'users#new'
+
 end
