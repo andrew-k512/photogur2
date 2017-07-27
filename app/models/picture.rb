@@ -15,5 +15,6 @@ class Picture < ApplicationRecord
                      length: { minimum: 2 }
   validates :title, length: { minimum: 2 },
                     presence: true
+  validates :url, :format => URI::regexp(%w(http https))
 
 end
